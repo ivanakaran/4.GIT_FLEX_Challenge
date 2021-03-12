@@ -1,0 +1,404 @@
+/*Global*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  background-color: #2791e6;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.ourWorkText {
+  text-align: center;
+  padding: 50px 80px;
+  line-height: 1.5em;
+}
+
+.ourWorkText p {
+  width: 70%;
+  font-size: 14px;
+  margin: auto;
+  color: #666;
+}
+
+.horLine {
+  width: 15%;
+  margin: auto;
+  border-bottom: 2px solid #2791e6;
+  padding-top: 20px;
+}
+
+/*Banner*/
+
+header {
+  width: 100%;
+  color: white;
+}
+
+header .banner {
+  background-image: url(./img/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.75;
+}
+
+div.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-size: 500;
+}
+
+.banner .nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .navBar ul {
+  display: flex;
+}
+
+.nav .navBar ul li {
+  text-decoration: none;
+  margin: 2%;
+  list-style: none;
+}
+
+.nav .navBar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  line-height: 0.1em;
+  font-size: 30px;
+}
+
+/*Our Work Section*/
+
+.ourWorkImg {
+  width: 90%;
+  margin: auto;
+}
+.ourWorkImg .imgFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.shortImg,
+.wideImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+}
+
+.imgFlex .shortImg {
+  width: 35vw;
+}
+
+.imgFlex .wideImg {
+  width: 52vw;
+}
+
+.firstRow .shortImg {
+  background-image: url(./img/coast.jpg);
+}
+
+.firstRow .wideImg {
+  background-image: url(./img/island.jpg);
+}
+
+.secondRow .wideImg {
+  background-image: url(./img/balloon.jpg);
+}
+
+.secondRow .shortImg {
+  background-image: url(./img/mountain.jpg);
+}
+
+/*Features and Services*/
+
+#about {
+  margin-top: 50px;
+  background-color: #f7f7f7;
+}
+
+.services {
+  display: flex;
+  color: #666;
+  text-align: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.services div {
+  margin-bottom: 20px;
+}
+
+.services h4 {
+  color: #000;
+}
+
+.services i {
+  color: #2791e6;
+  font-size: 24px;
+}
+
+.newsLetter form {
+  margin: 40px auto;
+}
+
+.newsLetter form input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+}
+
+/*Footer*/
+footer {
+  background-color: #414a4f;
+  color: #d3d3d3;
+  border-bottom: 3px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contact ul {
+  margin: 0;
+  display: flex;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#contact ul li {
+  list-style: none;
+  margin-right: 7%;
+}
+
+#contact ul li a i {
+  color: #fff;
+  background-color: #414a4f;
+  font-size: 30px;
+}
+
+.footerText {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.footerText a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 425px) {
+  header .banner {
+    background-position: left;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(./img/hero.jpg);
+  }
+  .banner .nav {
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    line-height: 0.7em;
+  }
+
+  div.logo {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .nav .navBar ul {
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav .navBar ul li {
+    margin: 0;
+  }
+
+  .showcase {
+    margin-top: 25%;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .showcase h1 {
+    line-height: 1.5em;
+  }
+
+  .showcase p {
+    margin-top: 0;
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px 40px;
+    width: 80%;
+    margin: auto;
+  }
+
+  #products {
+    width: 90%;
+    margin: auto;
+  }
+
+  .ourWorkText h3 {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+
+  .ourWorkText p {
+    width: 100%;
+  }
+
+  .horLine {
+    width: 80%;
+  }
+
+  .ourWorkImg .imgFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgFlex .shortImg,
+  .imgFlex .wideImg {
+    height: 35vh;
+    width: 60vw;
+    margin-bottom: 20px;
+  }
+
+  .services {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .newsLetter div {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .newsLetter form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsLetter form input {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  #contact ul {
+    padding-left: 35px;
+  }
+
+  #contact,
+  .footerText {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    height: 500px;
+  }
+  header .banner {
+    background-size: 100%;
+    background-position: unset;
+    background-attachment: unset;
+    font-size: 22px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(./img/hero.jpg);
+  }
+
+  .banner .navBar {
+    margin-right: 20px;
+  }
+
+  .showcase {
+    margin-top: 15%;
+  }
+
+  button {
+    padding: 15px 35px;
+  }
+
+  .ourWorkText p {
+    width: 80%;
+  }
+  .ourWorkImg .imgFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgFlex .shortImg,
+  .imgFlex .wideImg {
+    width: 70vw;
+    margin-bottom: 20px;
+  }
+
+  .services {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .newsLetter form input {
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  .newsLetter form label {
+    margin: auto;
+    font-size: 16px;
+    padding: 15px 40px;
+  }
+}
